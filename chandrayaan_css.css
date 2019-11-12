@@ -1,7 +1,8 @@
 *{
 	margin: 0px;
 	padding: 0px;
-	box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Montserrat',sans-serif;
 }
 html{
 	scroll-behavior: smooth;
@@ -102,61 +103,6 @@ nav a:hover{
     color:rgb(255, 0, 0);
 }
 
-.container1{
-	background-color: rgba(0, 0, 0, 0.5);
-	transition: background-color 0.5s ease-in-out!important;
-}
-.container1:hover{
-    background-color: rgba(0, 0, 0, .9);
-}
-.container1 a:hover{
-    text-decoration: none;
-    color:red;
-}
-.container2 .about1{
-    background-color: rgb(195, 196, 197);
-    box-shadow: 0px 0px 2px 2px rgb(107, 106, 106);
-}
-.container2 p{
-    color:rgb(17, 17, 17);
-}
-
-.carousel {
-    height: 50%;
-}
-
-.carousel-item img{
-    height: 300px;
-}
-.carousel-indicators i{
-   color: white;
-   
-   
-}
-.carousel-indicators .active{
-   color: red;
-}
-.count{
-    color: rgb(15, 15, 15);
-    font-size: 60px;
-    font-weight: bold;
-}
-.container3 .row1{
-	background-color: rgba(240, 248, 255, 0.589);
-	border-radius: 10px;
-	transition: background-color 0.5s ease-in-out;
-}
-.container3 .row1:hover{
-	background-color: rgba(240, 248, 255, 0.904);
-}
-.container3 .row1 a{
-	text-decoration: none;
-	font-weight: bold;
-}
-.container3 .row1 a:hover{
-	color:red
-}
-
 #mine {
 	color:white;
 	text-align: center;
@@ -168,11 +114,11 @@ nav a:hover{
 }
 
   
-@media (max-width:1198px){
-	html{
+@media (min-width:700px){
+    html{
 	overflow-x:hidden!important;
 	}
-
+    
 	.navbar-toggler{
 		font-size: 30px !important;
 		color:white ! important;
@@ -182,7 +128,16 @@ nav a:hover{
 		display:none ;
 		transition:0.6s ! important;
 		color:white ! important;
-	}
+    }
+    .navbar1{
+        height: 50px;
+    }
+    section img{
+        transition: all 0.5s ease-in-out;
+    }
+    section img:hover{
+        transform:rotateX(20deg);
+    }
 }
 @media(max-width:400px){
     #thrust{
@@ -191,9 +146,56 @@ nav a:hover{
         margin-left:0px;
         padding-bottom:0px;
         visibility: hidden;
-	}
-	.nav-link.active {
-		color: #fff!important;
-		background-color: #DC0B0B!important;
-		}
+    }
+     img{
+        width:90%
+    }
+    .nav-link.active {
+        color: #fff!important;
+        background-color: #DC0B0B!important;
+        }
+}
+.main{
+    height: 50rem;
+    background: url("images/darkcurtain.jpg") no-repeat center center;
+    background-size: cover;
+}
+.main .pt-5{
+    padding-top: 15rem!important;
+}
+.main h3{
+    padding-top: 0px;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: bold;
+}
+.container1 .btn1{
+    width:90px;
+    height: 90px;
+    margin-top: 150px;
+    border-radius:50%;
+    background-color: antiquewhite;
+    border: none;
+}
+.container1 .btn1{
+    cursor: pointer;
+}
+.container1 .btn1:focus{
+    outline: none;
+}
+.fa-meteor{
+    color: #DC0B0B;
+    font-size: 40px;
+    margin-top: 20px;
+    transform: rotateY(180deg);
+}
+.container2{
+    background-color: #ebebeb;
+}
+.timeliner{
+    background: url("images/timelinebg.png") no-repeat center center;
+    background-size: cover;
+}
+#navbar2 .nav-link.active{
+    color: wheat;
+    background-color: orangered;
 }
